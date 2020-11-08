@@ -8,21 +8,38 @@
     android:background="@color/white"
     tools:context=".MainActivity" >
 
-
-        <com.google.android.material.appbar.AppBarLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
-            <com.google.android.material.appbar.MaterialToolbar
-                android:id="@+id/topAppBar"
+            <com.google.android.material.appbar.AppBarLayout
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:title="FoxAndroid"
-                app:navigationIcon="@drawable/ic_baseline_menu_24"
-                android:background="@color/white"
-                />
+                android:layout_height="wrap_content">
 
-        </com.google.android.material.appbar.AppBarLayout>
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/topAppBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:title="FoxAndroid"
+                    app:navigationIcon="@drawable/ic_baseline_menu_24"
+                    android:background="@color/white"
+                    />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="cursive"
+                android:textAlignment="center"
+                android:text="Navigation Drawer Tutorial"
+                android:textColor="@color/black"
+                android:textSize="50dp" />
+
+        </RelativeLayout>
+
+
 
         <com.google.android.material.navigation.NavigationView
             android:id="@+id/navigation"
